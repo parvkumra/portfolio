@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #010824;
+  background-image: 
+    repeating-linear-gradient(to right, transparent 0 49px, #eee1 49px 50px),
+    repeating-linear-gradient(to bottom, transparent 0 49px, #eee1 49px 50px);
+  font-family: 'Noto Sans', sans-serif;
+  cursor: url("icons8-cursor-64.png"),  auto;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  height: 400px;
+  width: 400px;
+  background-image: linear-gradient(to right, #d02e23, #7a43b6);
+  z-index: -1;
+  top: -200px;
+  left: calc(50% - 200px); /* Proper spacing around operators */
+  filter: blur(250px);
+}
+
+#hello > div {
+  transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+}
+
+#hellok {
+  background-size: 200% auto;
+  animation: granimation 5s infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes granimation {
+  to {
+    background-position: 200% center;
+  }
+}
+#skills{
+  transform: translateX(15%);
+  
+  
+}
